@@ -125,7 +125,7 @@ def create_dashboard(cards, shp_communes, shp_dfci, colors):
                 card.display_statistics(filtered_shp, attribute)
 
             # Affichage de l'histogramme
-            st.subheader(f"Histogramme : {attribute}")
+            st.subheader(f"Histogramme : {card.title}")
             fig = card.create_interactive_histogram(filtered_shp, attribute)
             st.plotly_chart(fig)
 
