@@ -137,7 +137,7 @@ shp_dfci = gpd.read_file('Data/dfci_stats_python.shp')
 cards = [
     Card("Nombre d'incendies", "Cette carte montre où les incendies sont les plus fréquents.", "Nombre d'i"),
     Card("Ratio de végétation", "Cette carte illustre l'importance relative de la végétation.", "Ratio"),
-    Card("Climat", "Cette carte montre les variations climatiques par région.", "climat_majority"),
+    Card("Climat", "Cette carte montre les variations climatiques par région.", "climat_maj"),
     Card("Altitude", "Cette carte donne une vue des altitudes moyennes.", "mnt_mean")
 ]
 
@@ -145,7 +145,7 @@ cards = [
 colors = {
     "Nombre d'i": "Reds",
     "Ratio": "Greens",
-    "climat_majority": "YlOrBr",
+    "climat_maj": "YlOrBr",
     "mnt_mean": "Blues"
 }
 
