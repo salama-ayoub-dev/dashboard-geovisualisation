@@ -40,7 +40,7 @@ class Card:
         self.attribute = attribute
 
     def create_map(self, shp, attribute, color):
-        m = folium.Map(location=[43.923988, 7.157704], zoom_start=9, tiles="cartodbdark_matter")
+        m = folium.Map(location=[43.923988, 7.157704], zoom_start=9, tiles="OpenStreetMap")
         data = pd.DataFrame({'NOM': shp['NOM'], attribute: shp[attribute]})
         choropleth = folium.Choropleth(
             geo_data=shp,
